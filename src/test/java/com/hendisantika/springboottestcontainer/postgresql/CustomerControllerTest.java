@@ -34,8 +34,10 @@ import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 class CustomerControllerTest {
 
     static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:15-alpine");
+
     @Autowired
     CustomerRepository customerRepository;
+
     @LocalServerPort
     private Integer port;
 
