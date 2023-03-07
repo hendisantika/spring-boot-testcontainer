@@ -1,4 +1,4 @@
-package com.hendisantika.springboottestcontainer;
+package com.hendisantika.springboottestcontainer.postgresql;
 
 import com.hendisantika.springboottestcontainer.entity.Author;
 import com.hendisantika.springboottestcontainer.entity.Book;
@@ -24,7 +24,7 @@ import java.util.List;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
-import static org.springframework.http.HttpStatus.CREATED;
+import static org.springframework.http.HttpStatus.OK;
 
 /**
  * Created by IntelliJ IDEA.
@@ -80,7 +80,7 @@ public class BookRepositoryRestResourceTests {
 
         ResponseEntity<Book> response = restTemplate.postForEntity("/books", book, Book.class);
 
-        assertThat(response.getStatusCode()).isEqualTo(CREATED);
+        assertThat(response.getStatusCode()).isEqualTo(OK);
     }
 
     @Test
