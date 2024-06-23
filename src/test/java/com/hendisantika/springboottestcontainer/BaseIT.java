@@ -25,7 +25,7 @@ public abstract class BaseIT {
 
     static {
         postgreSQLContainer =
-                new PostgreSQLContainer<>(DockerImageName.parse("postgres:15-alpine3.17"))
+                new PostgreSQLContainer<>(DockerImageName.parse("postgres:17beta1-alpine3.20"))
                         .withDatabaseName("test")
                         .withUsername("luffy")
                         .withPassword("s3cret")

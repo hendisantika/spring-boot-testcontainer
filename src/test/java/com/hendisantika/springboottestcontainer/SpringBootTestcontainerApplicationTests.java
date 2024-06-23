@@ -14,7 +14,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @SpringBootTest(
         properties = {
                 "management.endpoint.health.show-details=always",
-                "spring.datasource.url=jdbc:tc:postgresql:15-alpine:///test"
+                "spring.datasource.url=jdbc:tc:postgresql:17beta1-alpine3.20:///test"
         },
         webEnvironment = RANDOM_PORT
 )

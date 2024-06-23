@@ -33,7 +33,7 @@ import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class CustomerControllerTest {
 
-    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:15-alpine");
+    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:17beta1-alpine3.20");
 
     @Autowired
     CustomerRepository customerRepository;

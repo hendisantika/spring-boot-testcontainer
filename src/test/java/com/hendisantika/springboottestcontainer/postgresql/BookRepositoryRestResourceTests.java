@@ -38,7 +38,7 @@ import static org.springframework.http.HttpStatus.OK;
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class BookRepositoryRestResourceTests {
-    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:15-alpine");
+    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:15-alpine3.17");
     @Autowired
     private TestRestTemplate restTemplate;
 

@@ -33,10 +33,10 @@ import java.util.UUID;
 class ConsultantRepositoryTest {
 
     @Container
-    static PostgreSQLContainer postgresqlContainer = new PostgreSQLContainer("postgres:15-alpine")
+    static PostgreSQLContainer postgresqlContainer = new PostgreSQLContainer("postgres:17beta1-alpine3.20")
             .withDatabaseName("test")
-            .withUsername("sa")
-            .withPassword("sa");
+            .withUsername("yuji")
+            .withPassword("S3cret");
     @Autowired
     private ConsultantRepository repository;
 

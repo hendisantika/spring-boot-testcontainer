@@ -34,7 +34,7 @@ import java.util.UUID;
 public class ProjectRepositoryTest {
 
     @Container
-    static PostgreSQLContainer postgres = new PostgreSQLContainer("postgres:15-alpine3.17");
+    static PostgreSQLContainer postgres = new PostgreSQLContainer("postgres:17beta1-alpine3.20");
     @Autowired
     private ProjectRepository repository;
 
