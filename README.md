@@ -1,5 +1,7 @@
 # Spring Boot: PostgreSQL & MySQL Container Integration
 
+![Maven Build](https://github.com/hendisantika/spring-boot-testcontainer-mysql/workflows/Maven%20Build/badge.svg?branch=main)
+
 Avoid running different databases between integration tests and production.
 
 ## Background
